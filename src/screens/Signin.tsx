@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { VStack, Heading, Icon, useTheme} from 'native-base'
+import { useState } from 'react';
+import { VStack, Heading, Icon, useTheme } from 'native-base';
 import { Envelope, Key } from 'phosphor-react-native';
 import Logo from '../assets/logo_primary.svg';
 
@@ -17,7 +17,7 @@ export function SignIn(){
       <Logo />
 
       <Heading color="gray.100" fontSize="xl" mt={20} mb={6}>
-          Acesse sua conta {name}
+          Acesse sua conta 
       </Heading>
 
       <Input 
@@ -25,7 +25,7 @@ export function SignIn(){
          mb={4}
          InputLeftElement={<Icon as={<Envelope color={colors.gray[300]} />} ml={4} />}
          onChangeText={setName}
-       />
+      />
 
       <Input 
          placeholder="Senha"
@@ -33,7 +33,7 @@ export function SignIn(){
          secureTextEntry
          mb={8}
          onChangeText={setPassword}
-        />
+      />
 
         <Button title='Entrar' w="full"/>
     </VStack>
